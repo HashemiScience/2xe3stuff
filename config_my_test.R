@@ -13,7 +13,7 @@ config_my_test <- function(sn){
   library(ggplot2)
   print("ggplot2 package succesfully loaded.")
 
-  if(!require(ggplot2)){install.packages("xlsx")}
+  if(!require(xlsx)){install.packages("xlsx")}
   library(xlsx)
   print("xlsx package succesfully loaded.")
   
