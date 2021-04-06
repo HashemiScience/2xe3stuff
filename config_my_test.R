@@ -33,9 +33,11 @@ config_my_test <- function(sn){
   
   # generate data
 
-  alldata <- data.frame(var1 = rnorm(dat_n, dat1_mean, dat1_sd),
-             rnorm_multi(dat_n, vars=2, mu=dat2_means, sd=dat2_sd, r=dat2_r, varnames=c("var2","var3")),
-             rnorm_multi(dat_n, vars=2, mu=dat3_means, sd=dat3_sd, r=dat3_r, varnames=c("var4","var5")))
+  alldata <- data.frame(subject = factor(1:dat_n, label="subj"),
+                        var1 = rnorm(dat_n, dat1_mean, dat1_sd),
+                        rnorm_multi(dat_n, vars=2, mu=dat2_means, sd=dat2_sd, r=dat2_r, varnames=c("var2","var3")),
+                        rnorm_multi(dat_n, vars=2, mu=dat3_means, sd=dat3_sd, r=dat3_r, varnames=c("var4","var5")))
+  alldata <- alldata[sample(1:dat_n,dat_n,replace=FALSE),]
   
   print("your data has been generated.")
   print("Please make sure you saved it in a variable")
