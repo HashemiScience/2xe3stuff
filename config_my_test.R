@@ -13,10 +13,6 @@ config_my_test <- function(sn){
   library(ggplot2)
   print("ggplot2 package succesfully loaded.")
 
-  if(!require(xlsx)){install.packages("xlsx")}
-  library(xlsx)
-  print("xlsx package succesfully loaded.")
-  
   # set the seed
   set.seed(sn)
   print(paste0("seed successfully set to ",as.character(sn),"."))
