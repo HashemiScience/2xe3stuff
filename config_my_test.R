@@ -37,7 +37,9 @@ config_my_test <- function(sn){
              rnorm_multi(dat_n, vars=2, mu=dat2_means, sd=dat2_sd, r=dat2_r, varnames=c("var2","var3")),
              rnorm_multi(dat_n, vars=2, mu=dat3_means, sd=dat3_sd, r=dat3_r, varnames=c("var4","var5")))
   
-  print("your data has been generated. Please make sure you saved it in a variable (i.e., myData <- setup_test(studentnumber)")
+  print("your data has been generated.")
+  print("Please make sure you saved it in a variable")
+  print("(i.e., myData <- setup_test(studentnumber)")
   
   
   return(alldata)
