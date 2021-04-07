@@ -21,15 +21,15 @@ config_my_test <- function(sn){
   dat_n = round(runif(1, 80,120))
   
   dat1_mean = runif(1, 10,200)
-  dat1_sd = runif(1,10,20)
+  dat1_sd = runif(1,10,50)
   
   dat2_means = runif(2,10,200)
-  dat2_sd = runif(2,10,20)
+  dat2_sd = runif(2,10,50)
   dat2_r = runif(1,0.7,0.9)
   
   dat3_means = runif(2,10,200)
-  dat3_sd = runif(2,10,20)
-  dat3_r = runif(1,0.1,0.2)
+  dat3_sd = runif(2,10,50)
+  dat3_r = runif(1,0.2,0.4)
   
   # generate data
 
@@ -40,7 +40,7 @@ config_my_test <- function(sn){
 
   print("your data has been generated.")
   print("Please make sure you saved it in a variable")
-  print("(i.e., myData <- setup_test(studentnumber)")
+  print("(i.e., myData <- config_my_test(studentnumber)")
   
   
   return(alldata)
