@@ -48,3 +48,17 @@ config_my_test <- function(sn){
 }
 
 
+get_contingency_data <- function(sn){
+  set.seed(sn)
+  print(paste0("seed successfully set to ",as.character(sn),"."))
+  
+  humanIntro <- round(runif(1,10,90))
+  humanExtro <- round(runif(1,95,115))-humanIntro
+  alienIntro <- round(runif(1,10,90))
+  alienExtro <- round(runif(1,95,115))-alienIntro
+  
+  tableData <- data.frame(human=c(humanIntro,humanExtro),alien=c(alienIntro,alienExtro), row.names = c("introvert","extrovert"))
+  
+  return(tableData)
+  
+}
