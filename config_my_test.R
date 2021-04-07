@@ -1,6 +1,3 @@
-# create a script that they will SOURCE and it will create their datasets that they will use.
-# in the script, want to set the seed to their student ID
-
 config_my_test <- function(sn){
   # please enter all digits of your student number
   
