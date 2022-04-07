@@ -29,7 +29,7 @@ config_my_test <- function(sn){
   
   print("Your data was generated.")
   print("Please make sure there is a variable called testData (or whatever you called it) in your workspace.")
-  print("If it isn't there, copy and paste the following line of code into your console, and press enter.")
+  print("If it isn't there, copy and paste the following line of code into your console (without the quotations), and press enter.")
   print(paste0("testData <- config_my_test(",sn,")"))
   
   testData <- alldata
