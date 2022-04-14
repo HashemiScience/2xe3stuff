@@ -20,7 +20,7 @@ create_my_data <- function(sn){
   
   # generate data
   
-  subjID = factor(sample(1:dat_n,dat_n,replace=FALSE), label="s")
+  subjID = factor(sample(1:dat_n,dat_n,replace=FALSE), label="subject")
   var1 = round(rnorm(dat_n, dat1_mean, dat1_sd),1)
   var2 = round(rnorm(dat_n, dat2_mean, dat2_sd),1)
   var3 = round((jitter(var2, dat2_3_r) + rnorm(dat_n,0,50)) / 10, 1)
